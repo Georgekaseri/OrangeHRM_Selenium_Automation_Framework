@@ -10,7 +10,7 @@
         </classes>
         <groups>
             <run>
-                <include name="smoke"> </include>
+                <include name="smoke"></include>
             </run>
         </groups>
     </test>

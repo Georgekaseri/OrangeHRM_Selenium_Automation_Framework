@@ -34,10 +34,10 @@ public class AddNewEmployee_POM extends CommonToAllPage {
         presenceOfElement(personalDash);
         return getElement(personalDash).getText();
 
+    }
+    public Employee_DashboardPage_POM newEmployeeCrasted(){
 
-
-
-
+        return new Employee_DashboardPage_POM();
     }
 
 

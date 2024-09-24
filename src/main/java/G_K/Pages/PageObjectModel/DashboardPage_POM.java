@@ -14,6 +14,7 @@ public class DashboardPage_POM extends CommonToAllPage {
 
 
     public String loggedInUserName(){
+        visibilityOfElement(userNameOnDashboard);
         presenceOfElement(userNameOnDashboard);
         return getElement(userNameOnDashboard).getText();
     }
