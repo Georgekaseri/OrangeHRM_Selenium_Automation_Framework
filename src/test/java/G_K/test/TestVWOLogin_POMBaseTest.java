@@ -19,11 +19,6 @@ public class TestVWOLogin_POMBaseTest  extends CommonToAllTest {
         // Test NG
         Assert.assertEquals(error_msg_text,PropertyReader.readyKey("error_message"));
 
-        // Assert J
-        Assertions.assertThat(error_msg_text )
-                .isNotNull()
-                .isNotBlank()
-                .contains(PropertyReader.readyKey("error_message"));
 
     }
 
