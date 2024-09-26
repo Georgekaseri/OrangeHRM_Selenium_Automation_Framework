@@ -25,10 +25,20 @@ public class CommonToAllPage {
         getDriver().findElement(by).click();
     }
 
+    // This use for Page Factory
+    public void clickElement(WebElement by) {
+        by.click();
+    }
+
 
 
     public void enterInput(By by, String key) {
         getDriver().findElement(by).sendKeys(key);
+    }
+
+    // This use for Page Factory
+    public void enterInput(WebElement element, String key) {
+        element.sendKeys(key);
     }
 
 
@@ -40,13 +50,21 @@ public class CommonToAllPage {
         return new WebDriverWait(getDriver(), Duration.ofSeconds(20)).until(ExpectedConditions.presenceOfElementLocated(elementLocation));
     }
 
+
+
+
     public WebElement visibilityOfElement(By elementLocation) {
         return new WebDriverWait(getDriver(), Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOfElementLocated(elementLocation));
     }
 
+
+
+
     public WebElement getElement(By key) {
         return getDriver().findElement(key);
     }
+
+
 
 
 

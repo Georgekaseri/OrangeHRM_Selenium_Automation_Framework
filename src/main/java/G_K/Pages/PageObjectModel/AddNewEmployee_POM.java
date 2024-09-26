@@ -22,6 +22,7 @@ public class AddNewEmployee_POM extends CommonToAllPage {
 
 
     public String addNewEmployeeValidCrest() {
+        presenceOfElement(clickBtn);
         clickElement(clickBtn);
         visibilityOfElement(addBtn);
         clickElement(addBtn);
@@ -32,6 +33,7 @@ public class AddNewEmployee_POM extends CommonToAllPage {
         enterInput(employeeID, PropertyReader.readyKey("employeeID"));
         clickElement(saveBtn);
         presenceOfElement(personalDash);
+        visibilityOfElement(personalDash);
         return getElement(personalDash).getText();
 
     }
